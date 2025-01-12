@@ -1,26 +1,48 @@
 
-    .error-message {
-      color: red;
-      font-size: 0.9em;
-      margin-bottom: 5px;
-      display: none; /* Initially hidden */
-    }
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-      font-family: Arial, sans-serif;
-    }
-    .form-group {
-      margin-bottom: 20px;
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-    }
-    input {
-      width: 100%;
-      padding: 8px;
-      box-sizing: border-box;
-    }
   
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input:valid, select:valid {
+    border-color: #28a745; /* Green border for valid fields */
+    background-color: #e9f7ef;
+  }
+  input:invalid, select:invalid {
+    border-color: #dc3545; /* Red border for invalid fields */
+    background-color: #f8d7da;
+  }
+  .error-message {
+    color: #dc3545; /* Red color for error messages */
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    display: none;
+  }
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+
